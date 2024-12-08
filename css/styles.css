@@ -4,21 +4,31 @@ body {
   background-color: #fff;
 }
 
-ul {
+ul,
+ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.hero,
-.footer {
-  background-color: #2e2f42;
+button {
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -35,7 +45,19 @@ button {
   overflow: hidden;
 }
 
+.container {
+  width: 1128px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
 /* -------   ------- */
+
+.hero,
+.footer {
+  background-color: #2e2f42;
+}
 
 .section-title {
   font-size: 36px;
@@ -77,6 +99,8 @@ button {
 /* todo------- header ------- */
 
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-nav {
@@ -135,6 +159,8 @@ button {
 /* todo------- hero ------- */
 
 .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -143,10 +169,12 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .hero-btn {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -154,6 +182,13 @@ button {
   color: #fff;
 
   background: #4d5ae5;
+
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
+
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-btn:hover,
@@ -166,6 +201,8 @@ button {
 /* todo------- features ------- */
 
 .features {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .features-list {
@@ -175,6 +212,7 @@ button {
 }
 
 .features-subtitle {
+  margin-bottom: 8px;
 }
 
 .features-text {
@@ -186,9 +224,12 @@ button {
 
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title {
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -203,6 +244,7 @@ button {
 
 .team-subtitle {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -214,9 +256,12 @@ button {
 /* todo------- portfolio ------- */
 
 .portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-title {
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -229,6 +274,7 @@ button {
 }
 
 .portfolio-subtitle {
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -239,9 +285,13 @@ button {
 /* todo------- footer ------- */
 
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-part-footer {
