@@ -31,6 +31,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -46,7 +50,7 @@ button {
 }
 
 .container {
-  width: 1128px;
+  width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -101,9 +105,17 @@ button {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -111,9 +123,12 @@ button {
 
 .logo-part-header {
   color: #2e2f42;
+  margin-right: 76px;
 }
 
 .header-menu-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-menu-item {
@@ -125,6 +140,8 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+
+  padding: 24px 0;
 }
 
 .header-menu-link:hover,
@@ -137,6 +154,8 @@ button {
 }
 
 .header-address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-address-item {
@@ -184,7 +203,9 @@ button {
   background: #4d5ae5;
 
   border-radius: 4px;
-  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  /* padding: 16px 32px; */
   border: none;
 
   display: block;
@@ -206,9 +227,12 @@ button {
 }
 
 .features-list {
+  display: flex;
+  gap: 24px;
 }
 
 .features-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .features-subtitle {
@@ -233,13 +257,23 @@ button {
 }
 
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
+  width: calc((100% - 3 * 24px) / 4);
   background-color: #ffffff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-img {
+}
+
+.team-subtitle-container {
+  padding: 32px 0;
 }
 
 .team-subtitle {
@@ -265,12 +299,23 @@ button {
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-item {
+  width: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-img {
+}
+
+.portfolio-subtitle-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-subtitle {
@@ -289,6 +334,10 @@ button {
   padding-bottom: 100px;
 }
 
+.footer-container {
+  /* width: 264px; */
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -300,6 +349,7 @@ button {
 
 .footer-text {
   color: #f4f4fd;
+  max-width: 264px;
 }
 
 /* -------   ------- */
