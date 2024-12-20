@@ -665,3 +665,51 @@ img {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
+
+.check-field {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.modal-check-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.modal-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
+.modal-check-box {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: transparent;
+  cursor: pointer;
+}
+
+.modal-check:checked + .modal-check-label span {
+  background-color: #404bbf;
+  border: none;
+}
+
+.check-icon {
+  fill: #f4f4fd;
+}
